@@ -1,0 +1,4 @@
+# Improper Exception Handling in Asynchronous Dart Code
+This example showcases a common error in Dart: neglecting to handle potential exceptions during JSON decoding within asynchronous operations.
+The `bug.dart` file contains code that fetches data from an API, but it lacks comprehensive exception handling for cases where the API response is not valid JSON.  This can lead to unexpected crashes.
+The `bugSolution.dart` file demonstrates a corrected version with more robust error handling.  It explicitly checks for `FormatException` during `jsonDecode` and provides more informative error messages.
